@@ -27,18 +27,13 @@ int main(void)
 	{
 		printf("greater than 5\n");
 	}
-	else if (x < 6)
+	else if (x < 6 && x != 0)
 	{
-		printf("less than 6 ");
-		if (x == 0)
-		{
-			printf("and is 0\n");
-		}
-		else
-		{
-			printf("and not 0\n");
-		}
+		printf("less than 6 and not 0\n");
 	}
-
+	else if (x < 6 && x == 0)
+	{
+		printf("0\n");
+	}
 	return (0);
 }
