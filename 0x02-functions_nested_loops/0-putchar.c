@@ -1,4 +1,5 @@
 #include <string.h>
+#include  "main.h"
 
 /**
 * main - print text using while loop
