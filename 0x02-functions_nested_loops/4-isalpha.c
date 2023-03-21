@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* _islower - check if the provided character is an alphabet
+* _isalpha - check if the provided character is an alphabet
 *
 * @c: character to be tested
 *
