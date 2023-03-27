@@ -24,7 +24,7 @@ void puts_half(char *str)
 	if (length % 2 == 0)
 		i = length / 2;
 	else
-		i = (length - 1) / 2;
+		i = length - ((length - 1) / 2);
 	/* Loop through string starting from midpoint*/
 	while (i <= (length - 1))
 	{
