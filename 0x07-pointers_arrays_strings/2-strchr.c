@@ -9,13 +9,17 @@
 */
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		if (*s == c)
+			return (s);
+
+		s++;
 	}
 
-	return (NULL);
+	/* Check if the user intended to search for the nullbyte*/
+	if (c == '\0')
+		return (s);
+
+	return (NULL);  /* c not found*/
 }
