@@ -8,3 +8,6 @@ Print the number of arguments passed to a program
 
 ## 2-args.c
 Print all the arguments passed to the program, including the name of the program
+
+## 3-mul.c
+Multiply two integers passed as arguments to the program
