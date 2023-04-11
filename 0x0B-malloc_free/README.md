@@ -17,3 +17,6 @@ Write a function that returns a pointer to a newly allocated space in memory, wh
 Write a function that concatenates two strings.
 - The returned pointer should point to a newly allocated space in memory which contains the contents of s1, followed by the contents of s2, and null terminated
 - if NULL is passed, treat it as an empty string
+
+## 3-alloc_grid.c
+Create a 2D array of integers initialized with zeros and return a pointer to the array.
