@@ -20,3 +20,6 @@ Write a function that concatenates two strings.
 
 ## 3-alloc_grid.c
 Create a 2D array of integers initialized with zeros and return a pointer to the array.
+
+## 4-free_grid.c
+Write a function that frees a 2 dimensional grid previously created by the `alloc_grid` function in `3-alloc_grid.c`
