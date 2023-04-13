@@ -36,7 +36,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	old_mem = ptr;
 
 	/* n allows the memory to be old memory to be shrunk or expanded */
-	n = (new_size > old_size) ? new_size : old_size;
+	n = (new_size > old_size) ? old_size : new_size;
 	for (i = 0; i < n; i++)
 		new_mem[i] = old_mem[i];
 
