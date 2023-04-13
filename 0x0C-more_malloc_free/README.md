@@ -14,3 +14,8 @@ Write a function that allocates memory for an array, using malloc.
 - The _calloc function allocates memory for an array of `nmemb` elements of `size` bytes each and returns a pointer to the allocated memory.
 - The memory is set to zero
 - If `nmemb` or `size` is 0, then `_calloc` returns `NULL`
+
+## 3-array_range.c
+Write a function that creates an array of integers.
+- The array created should contain all the values from min (included) to max (included), ordered from min to max
+- If min > max, return NULL
