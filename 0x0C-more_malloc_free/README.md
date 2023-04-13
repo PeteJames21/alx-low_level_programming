@@ -19,3 +19,11 @@ Write a function that allocates memory for an array, using malloc.
 Write a function that creates an array of integers.
 - The array created should contain all the values from min (included) to max (included), ordered from min to max
 - If min > max, return NULL
+
+## 100-realloc.c
+Write a function that reallocates a memory block using malloc and free
+- The contents will be copied to the newly allocated space, in the range from the start of `ptr` up to the minimum of the old and new sizes
+- If `new_size` > `old_size`, the “added” memory should not be initialized
+- If `new_size` == `old_size` do not do anything and return `ptr`
+- If `ptr` is `NULL`, then the call is equivalent to `malloc(new_size)`, for all values of `old_size` and `new_size`
+- If `new_size` is equal to zero, and `ptr` is not `NULL`, then the call is equivalent to `free(ptr)`. Return `NULL`
