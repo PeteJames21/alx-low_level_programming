@@ -11,3 +11,6 @@ print a `struct dog`
 
 ## 4-new_dog.c
 Write a function that allocates memory for and creates a new dog.
+
+## 5-free_dog.c
+Write a function that frees memory allocated to a dog
