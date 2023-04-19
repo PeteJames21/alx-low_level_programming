@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 	/* Get operator function */
 	symbol = argv[2];
 	op = get_op_func(symbol);
-	if (!op)
+	if (strlen(symbol) != 1 || !op)
 	{
 		printf("Error\n");
 		exit(99);
