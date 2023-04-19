@@ -35,13 +35,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	/* Avoid division by zero */
-	if ((op == op_div || op == op_mod) && b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	/* Perform calculation and print the result */
 	result = op(a, b);
 	printf("%d\n", result);
