@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -9,16 +10,23 @@
 */
 int (*get_op_func(char *s))(int, int)
 {
-	unsigned int i;
-	char ops[] = {'+', '-', '*', '/', '%'};
-	int (*funcs[])(int, int) = {op_add, op_sub, op_mul, op_div, op_mod};
-	int (*match)(int, int) = NULL;
+	op_t ops[] = {
+	{ "+", op_add },
+	{ "-", op_sub },
+	{ "*", op_mul },
+	{ "/", op_div },
+	{ "%", op_mod },
+	{ NULL, NULL }
+	};
+	int i = 0;
 
-	for (i = 0; i <= sizeof(ops); i++)
+	while (i < 5)
 	{
-		if (s[0] == ops[i])
-			match = funcs[i];
+		if (strcmp(s, ops[i].op) == 0)
+			return (ops[i].f);
+
+		i++;
 	}
 
-	return (match);
+	return (0);
 }
