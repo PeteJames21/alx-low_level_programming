@@ -13,6 +13,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	const char *sep;
 
+	if (n <= 0)
+		return;
+
 	if (!separator)
 		sep = "";
 	else
