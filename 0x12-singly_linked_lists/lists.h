@@ -2,11 +2,11 @@
 #define LISTS_H
 
 /**
-* struct list_t - a singly linked list
-* @str: a string
-* @len: number of elements in the string
-* @next: pointer to the next node in the list
-*/
+ * struct list_t - a singly linked list
+ * @str: a string
+ * @len: number of elements in the string
+ * @next: pointer to the next node in the list
+ */
 typedef struct list_t
 {
 	char *str;
@@ -16,6 +16,7 @@ typedef struct list_t
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
 
 #endif
