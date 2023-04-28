@@ -16,3 +16,7 @@ Write a function that adds a new node at the beginning of a listint_t list.
 
 ## 4-free_listint.c
 Write a function that frees a listint_t list.
+
+## 5-free_listint2.c
+Write a function that frees a listint_t list.
+- The function sets the head to `NULL`
