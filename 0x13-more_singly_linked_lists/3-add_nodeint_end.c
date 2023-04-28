@@ -4,7 +4,7 @@
 /**
  * add_nodeint_end - add a node to the end of a listint_t lise
  * @head: the head of the linked list
- * @n: the value of the `n` attribute of the new node 
+ * @n: the value of the `n` attribute of the new node
  *
  * Return: the address of the new element, or NULL on failure
  */
@@ -27,7 +27,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else
 	{
 		next_node = *head;
-		while(next_node)
+		while (next_node)
 		{
 			if (!next_node->next)
 			{
