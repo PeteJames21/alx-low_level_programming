@@ -28,3 +28,7 @@ Write a function that deletes the head node of a listint_t linked list, and retu
 ## 7-get_nodeint.c
 Write a function that returns the nth node of a listint_t linked list.
 - if the node does not exist, return NULL
+
+## 8-sum_listint.c
+Write a function that returns the sum of all the data (n) of a listint_t linked list.
+- if the list is empty, return 0
