@@ -32,3 +32,6 @@ Write a function that returns the nth node of a listint_t linked list.
 ## 8-sum_listint.c
 Write a function that returns the sum of all the data (n) of a listint_t linked list.
 - if the list is empty, return 0
+
+## 9-insert_nodeint.c
+Write a function that inserts a new node at a given position
