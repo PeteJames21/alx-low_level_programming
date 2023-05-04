@@ -24,3 +24,7 @@ Write a function that sets the value of a bit to 0 at a given index.
 
 ## 5-flip_bits.c
 Write a function that returns the number of bits you would need to flip to get from one number to another.
+
+## 100-get_endianness.c
+Write a function that checks the endianness.
+- Use the command `lscpu | head` to verify the output of the function
