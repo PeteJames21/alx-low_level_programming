@@ -5,7 +5,7 @@
 
 /**
  * append_text_to_file - append text to a file
- * @filename: name of file. File must not exist.
+ * @filename: name of file. File must exist.
  * @text_content: string to be written to the new file
  *
  * Return: 1 on success, -1 on failure
@@ -28,8 +28,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 	}
 
-	/* Create file with chmod 664 */
-	fd = open(filename, O_RDWR | O_APPEND | O_CREAT | O_EXCL, 0000664);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	wc = write(fd, text_content, count);
 	close(fd);
 
