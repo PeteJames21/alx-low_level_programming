@@ -28,3 +28,7 @@ Write a function that returns the sum of all the data (n) of a dlistint_t linked
 ## 7-insert_dnodeint.c
 Write a function that inserts a new node at a given position.
 - Return: the address of the new node, or NULL if it failed
+
+## 8-delete_dnodeint.c
+Write a function that deletes the node at index index of a dlistint_t linked list.
+- Return: 1 if it succeeded, -1 if it failed
