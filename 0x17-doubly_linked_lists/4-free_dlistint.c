@@ -21,5 +21,5 @@ void free_dlistint(dlistint_t *head)
 			break;
 		}
 		current = current->next;
-	}	
+	}
 }
