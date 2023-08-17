@@ -24,3 +24,7 @@ Write a function that returns the nth node of a dlistint_t linked list.
 ## 6-sum_dlistint.c
 Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
 - Return 0 if the list is empty
+
+## 7-insert_dnodeint.c
+Write a function that inserts a new node at a given position.
+- Return: the address of the new node, or NULL if it failed
