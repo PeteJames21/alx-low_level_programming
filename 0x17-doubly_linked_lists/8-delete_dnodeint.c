@@ -32,7 +32,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			{  /* Delete a node at a non-terminal position */
 				current->prev->next = current->next;
 				current->next->prev = current->prev;
-				free(current);	
+				free(current);
 			}
 			else /* (current->next == NULL) */
 			{  /* Delete the terminal node */
