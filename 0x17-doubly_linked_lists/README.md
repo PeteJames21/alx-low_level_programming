@@ -20,3 +20,7 @@ Write a function that frees a dlistint_t list.
 ## 5-get_dnodeint.c
 Write a function that returns the nth node of a dlistint_t linked list.
 - If the node does not exist, return NULL
+
+## 6-sum_dlistint.c
+Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+- Return 0 if the list is empty
