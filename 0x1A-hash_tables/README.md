@@ -30,3 +30,8 @@ Write a function that adds an element to the hash table.
 ## 4-hash_table_get.c
 Write a function that retrieves a value associated with a key.
 - Returns the value associated with the element, or NULL if key couldn’t be found
+
+## 5-hash_table_print.c
+Write a function that prints a hash table.
+- They key/value pairs are printed in the order they appear in the hash table.
+- Nothing is printed if the pointer to the hash table is `NULL`.
