@@ -35,3 +35,6 @@ Write a function that retrieves a value associated with a key.
 Write a function that prints a hash table.
 - They key/value pairs are printed in the order they appear in the hash table.
 - Nothing is printed if the pointer to the hash table is `NULL`.
+
+## 6-hash_table_delete.c
+Write a function that deletes a hash table.
