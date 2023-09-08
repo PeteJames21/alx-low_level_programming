@@ -27,3 +27,6 @@ Write a function that adds an element to the hash table.
   - redescribed collides with urites
   - dram collides with vivency
 
+## 4-hash_table_get.c
+Write a function that retrieves a value associated with a key.
+- Returns the value associated with the element, or NULL if key couldn’t be found
