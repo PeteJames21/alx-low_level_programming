@@ -13,25 +13,13 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (!ht)
 		return;
+
 	printf("{");
+
+	/* Print all key/value pairs in the hash table array and collision chains */
 	for (i = 0; i < (ht->size); i++)
 	{
 		node = (ht->array)[i];
-		if (!node)
-			continue;
-		if (is_first == 1)  /* is first element to be printed */
-		{
-			printf("%s: %s", node->key, node->value);
-			is_first = 0;
-		}
-		else
-			printf(", %s: %s", node->key, node->value);
-	}
-	for (i = 0; i < (ht->size); i++)
-	{
-		node = (ht->array)[i];
-		if (node)
-			node = node->next;
 
 		while (node)
 		{
@@ -45,5 +33,6 @@ void hash_table_print(const hash_table_t *ht)
 			node = node->next;
 		}
 	}
+
 	printf("}\n");
 }
