@@ -26,3 +26,6 @@ variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`
 
 The `all` rule recompiles only the updated source files
 The `clean`, `oclean`, `fclean`, `re` rules never fail
+
+## 4-Makefile
+Augment `3-Makefile` to include the following GCC flags: `-Wall -Werror -Wextra -pedantic`
