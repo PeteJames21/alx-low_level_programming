@@ -1,5 +1,5 @@
 # The compiler to be used
-CC = gcc -Wall -Werror -Wextra -pedantic
+CC = gcc
 # The .c source files to be used
 SRC = main.c school.c
 # The .o object files
@@ -8,12 +8,14 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 # The command for deleting files
 RM = rm -f
+# GCC flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 .PHONY: all
 
 $(NAME): $(OBJ)
-		$(CC) $(OBJ) -o $(NAME)
+		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 $(OBJ): m.h
 
 .PHONY: clean oclean fclean re
