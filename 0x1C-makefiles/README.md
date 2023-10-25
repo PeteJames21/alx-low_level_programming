@@ -5,3 +5,6 @@ Create a makefile that uses a rule called `all` to build an executable called `s
 
 ## 1-Makefile
 Use the C source files are prerequisites for the `all` rule.
+
+## 2-Makefile
+Use variable substitution to derive object file names from source files.

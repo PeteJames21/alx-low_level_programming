@@ -1,0 +1,15 @@
+CC = gcc  # The compiler to be used
+SRC = main.c school.c# The .c source files to be used
+OBJ = $(SRC:.c=.o)# The .o object files
+NAME = school  # The name of the executable
+.PHONY: all clean
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
+
+$(OBJ): m.h  # Dependencies for object files
+
+clean:
+		-rm -f $(OBJ) $(NAME) 
