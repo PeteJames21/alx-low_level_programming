@@ -1,7 +1,7 @@
-CC = gcc  #  The compiler to be used
-SRC = main.c school.c  # The .c source files to be used
-OBJ = $(SRC:.c=.o)  # The .o object files
-NAME = school  # The name of the executable
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
 .PHONY: all
 
 all: $(NAME)
