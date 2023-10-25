@@ -1,0 +1,34 @@
+# The compiler to be used
+CC = gcc
+# The .c source files to be used
+SRC = main.c school.c
+# The .o object files
+OBJ = $(SRC:.c=.o)
+# The name of the executable
+NAME = school
+# The command for deleting files
+# GCC flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(NAME)
+.PHONY: all
+
+$(NAME): $(OBJ)
+		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+$(OBJ): m.h
+
+.PHONY: clean oclean fclean re
+
+# Delete all Emacs and Vim temporary files along with the executable
+clean:
+	-$(RM) *~ *.swp $(NAME)
+
+# Delete the object files
+oclean:
+	-$(RM) $(OBJ)
+
+# Deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean: clean oclean
+
+# Force recompilation of all source files
+re: fclean all

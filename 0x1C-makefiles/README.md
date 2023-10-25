@@ -40,3 +40,6 @@ Create a function `def island_perimeter(grid):` that returns the perimeter of th
    - Grid is rectangular, width and height don’t exceed 100
 - Grid is completely surrounded by water, and there is one island (or nothing).
 - The island doesn’t have “lakes” (water inside that isn’t connected to the water around the island).
+
+## 100-Makefile
+Modify `4-Makefile` by removing the definition `RM = ...`. `$(RM)` should work without the definition since the variable defaults to `rm -f` if not explicitly defined.
