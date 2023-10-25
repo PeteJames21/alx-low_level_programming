@@ -10,7 +10,7 @@ NAME = school
 # GCC flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME) m.h
+all: m.h $(NAME)
 .PHONY: all
 
 $(NAME): $(OBJ)
