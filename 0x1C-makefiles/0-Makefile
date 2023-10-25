@@ -1,11 +1,11 @@
-objects = main.o school.o
+OBJECTS = main.o school.o
 all: school
 .PHONY: all
 
-school: $(objects)
-		gcc $(objects) -o school
+school: $(OBJECTS)
+		gcc $(OBJECTS) -o school
 
-$(objects): m.h
+$(OBJECTS): m.h
 
 .PHONY: clean
 clean:
