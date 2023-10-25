@@ -1,0 +1,12 @@
+objects = main.o school.o
+all: school
+.PHONY: all
+
+school: $(objects)
+		gcc $(objects) -o school
+
+$(objects): m.h
+
+.PHONY: clean
+clean:
+		-rm *.o school
