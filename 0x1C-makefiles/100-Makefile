@@ -10,12 +10,11 @@ NAME = school
 # GCC flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME)
+all: $(NAME) m.h
 .PHONY: all
 
 $(NAME): $(OBJ)
-		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-$(OBJ): m.h
+		$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: clean oclean fclean re
 
