@@ -38,3 +38,6 @@ int **allocate_map(int n, int m)
      return (map);
 }
 ```
+
+## 100-jump.c
+Write a function that searches for a value in a sorted array of integers using the Jump search algorithm with the square root of the array size as the jump step.
